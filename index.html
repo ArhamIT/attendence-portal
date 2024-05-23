@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portal-container">
+        <h1>Attendance Portal</h1>
+        <div class="card-container">
+            <div class="card present-card">
+                <h2>Present</h2>
+                <p id="present-count">0</p>
+            </div>
+            <div class="card absent-card">
+                <h2>Absent</h2>
+                <p id="absent-count">0</p>
+            </div>
+            <div class="card delete-card">
+                <h2>Left</h2>
+                <p id="delete-count">0</p>
+            </div>
+        </div>
+        <div class="student-list">
+            <div class="student">Maaz</div>
+            <div class="student">Rafay</div>
+            <div class="student">Haseeb</div>
+            <div class="student">Ehtisham</div>
+            <div class="student">Basit</div>
+            <div class="student">Bilal</div>
+            <div class="student">Azam</div>
+            <div class="student">Faizan</div>
+            <div class="student">Khurram</div>
+            <div class="student">Noman</div>
+            <!-- Add more students as needed -->
+        </div>
+        <div class="action-buttons">
+            <button id="present-btn">Present</button>
+            <button id="absent-btn">Absent</button>
+            <button id="delete-btn">Remove
+            </button>
+        </div>
+        <div class="history-container">
+            <h2>History</h2>
+            <ul id="history-log"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

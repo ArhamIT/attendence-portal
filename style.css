@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('pexels-d-ng-nhan-324384-1529881.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #ecf0f1;
+}
+
+.portal-container {
+    background: rgba(46, 47, 48, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #858788;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1.5em;
+    color: #fffdf3;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.student-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.student {
+    background: #818283;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.student:hover {
+    transform: scale(1.05);
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.action-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#present-btn {
+    background: #2ecc71;
+}
+
+#present-btn:hover {
+    background: #27ae60;
+    transform: scale(1.1);
+}
+
+#absent-btn {
+    background: #e74c3c;
+}
+
+#absent-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+#delete-btn {
+    background: #f39c12;
+}
+
+#delete-btn:hover {
+    background: #e67e22;
+    transform: scale(1.1);
+}
+
+.history-container {
+    background: #777879;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.history-container h2 {
+    margin: 0 0 10px 0;
+    color: #f8f8f8;
+    text-shadow: 0 0 10px rgba(255, 250, 250, 0.8);
+}
+
+#history-log {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-log li {
+    background: #262727;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s ease-out;
+}
